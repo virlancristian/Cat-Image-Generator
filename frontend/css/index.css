@@ -70,3 +70,23 @@ body, html {
 .cat-image, .save-button {
     display: none;
 }
+
+@media (max-width: 1000px) {
+    .content h1 {
+        margin: 5% 10%;
+    }
+
+    .search-field input {
+        width: 70vw;
+    }
+
+    #search-icon {
+        width: 4%;
+        padding-left: 63%;
+    }
+
+    .generate-button {
+        width: 47%;
+        height: 8vh;
+    }
+}
