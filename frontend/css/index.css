@@ -1,0 +1,92 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+
+    background-color: #141414;
+}
+
+@font-face {
+    font-family: 'Ubuntu Regular';
+    src: url(../fonts/Ubuntu-L.ttf);
+}
+
+.content {
+    width: 100vw;
+    padding-top: 15%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    color: #e5ebe7;
+
+    font-family: 'Ubuntu Regular';
+    font-size: 10vh;
+}
+
+.search-field {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.search-field input {
+    width: 45vw;
+    height: 3vh;
+
+    border-radius: 40px;
+    font-family: 'Ubuntu Regular';
+}
+
+#search-icon {
+    width: 1%;
+
+    padding-left: 43%;
+    position: absolute;
+}
+
+.generate-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #808080;
+    opacity: 50%;
+
+    margin-top: 2%;
+    height: 4vh;
+    width: 20%;
+    border-radius: 33px;
+    
+    font-family: 'Ubuntu Regular';
+}
+
+.cat-image, .save-button {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .content h1 {
+        margin: 5% 10%;
+    }
+
+    .search-field input {
+        width: 70vw;
+    }
+
+    #search-icon {
+        width: 4%;
+        padding-left: 63%;
+    }
+
+    .generate-button {
+        width: 47%;
+        height: 8vh;
+    }
+}
