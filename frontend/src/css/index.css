@@ -7,7 +7,7 @@ body, html {
 
 @font-face {
     font-family: 'Ubuntu Regular';
-    src: url(../fonts/Ubuntu-L.ttf);
+    src: url(../assets/fonts/Ubuntu-L.ttf);
 }
 
 .content {
@@ -47,11 +47,11 @@ body, html {
 #search-icon {
     width: 1%;
 
-    padding-left: 43%;
+    margin-left: 43%;
     position: absolute;
 }
 
-.generate-button {
+.generate-button, .save-button.active {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,6 +65,10 @@ body, html {
     border-radius: 33px;
     
     font-family: 'Ubuntu Regular';
+}
+
+.generate-button:hover, .save-button.active:hover, #search-icon:hover {
+    cursor: pointer;
 }
 
 .cat-image, .save-button {
@@ -82,11 +86,26 @@ body, html {
 
     #search-icon {
         width: 4%;
-        padding-left: 63%;
+        margin-left: 63%;
     }
 
     .generate-button {
         width: 47%;
         height: 8vh;
     }
+}
+
+.cat-images {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1%;
+}
+
+.cat-images img {
+    max-width: 70%;
+    border-radius: 5%;
 }
