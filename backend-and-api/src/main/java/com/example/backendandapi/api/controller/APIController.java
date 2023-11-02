@@ -8,6 +8,7 @@ import com.example.backendandapi.memory.Cachedb;
 import com.example.backendandapi.services.ResponseFormatterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,11 +27,18 @@ public class APIController {
     }
 
     @GetMapping("/api/image-links")
+    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<APIResponseInterface[]> getResponse(@RequestParam String breed, @RequestParam int imageNumber) {
+        String breedID;
+        APIRequestBody body;
+
         if(!validator.validateData(breed, imageNumber)) {
             return service.getRequestError(400);
         }
 
-        return service.getFormattedResponse(new APIRequestBody(cachedb.getBreed(breed), imageNumber));
+        breedID = breed.equals("") ? "" : cachedb.getBreed(breed);
+        body = new APIRequestBody(breedID, imageNumber);
+
+        return service.getFormattedResponse(body);
     }
 }
