@@ -6,7 +6,9 @@ The frontend is built in pure HTML + CSS + JavaScript and runs on a `Node.JS Exp
 
 ## Required 3rd party tools
 For anyone who wants to run the app on their computer, the following 3rd party apps must be installed:
+
 [Node.JS 20.8.1 and NPM](https://nodejs.org/dist/v20.8.1/)
+
 [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ## Deployment
