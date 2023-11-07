@@ -1,7 +1,6 @@
 ## Cat Image Generator 1.0.0
 
 Cat Image Generator is a web app designed to interact with the CatAPI to get random cat images provided by the API through an user-friendly interface. 
-The user can get random images by using the "Generate random image" button, by using the search field to get cat images based on a specific breed, or by providing the number of images(WIP)
 The frontend is built in pure HTML + CSS + JavaScript and runs on a `Node.JS Express` server, and the backend and API of the web app is built in `Spring Boot`.
 
 ## Release notes and documentation
