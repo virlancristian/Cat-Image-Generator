@@ -27,7 +27,6 @@ public class APIController {
     }
 
     @GetMapping("/api/image-links")
-    @CrossOrigin(origins = "http://localhost:3000")
     public ResponseEntity<APIResponseInterface[]> getResponse(@RequestParam String breed, @RequestParam int imageNumber) {
         String breedID;
         APIRequestBody body;
