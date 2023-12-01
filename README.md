@@ -3,8 +3,19 @@
 Cat Image Generator is a web app designed to interact with the CatAPI to get random cat images provided by the API through an user-friendly interface. 
 The frontend is built in pure HTML + CSS + JavaScript and runs on a `Node.JS Express` server, and the backend and API of the web app is built in `Spring Boot`.
 
+## Table of contents
+- [Relase notes and documentation](#release-notes-and-documentation)
+- [Former relase notes](#former-relase-notes)
+- [Required 3rd party tools](#required-3rd-party-tools)
+- [Deployment](#deployment)
+- [App docs](#app-docs)
+- [3rd party tools docs](#3rd-party-tools-docs)
+
 ## Release notes and documentation
-[Click here](https://github.com/virlancristian/Cat-Image-Generator/pull/6)
+[Click here](https://github.com/virlancristian/Cat-Image-Generator/pull/8)
+
+## Former relase notes
+- [Relase 1.0.0](https://github.com/virlancristian/Cat-Image-Generator/pull/6)
 
 ## Required 3rd party tools
 For anyone who wants to run the app on their computer, the following 3rd party apps must be installed:
