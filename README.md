@@ -1,4 +1,4 @@
-## Cat Image Generator 1.0.0
+## Cat Image Generator 1.1.0
 
 Cat Image Generator is a web app designed to interact with the CatAPI to get random cat images provided by the API through an user-friendly interface. 
 The frontend is built in pure HTML + CSS + JavaScript and runs on a `Node.JS Express` server, and the backend and API of the web app is built in `Spring Boot`.
@@ -14,21 +14,16 @@ For anyone who wants to run the app on their computer, the following 3rd party a
 [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 
 ## Deployment
-After you've cloned or downloaded the repo, you can access the `bash-scripts` directory to run the scripts for Windows or Linux (depending on what OS you use).
+After you've cloned or downloaded the repo, you must provide an API key from the CatAPI to the backend application.
 
-If you are using Linux you must grant permission for the bash files by using
+To do this, first you must get an API [key](https://thecatapi.com/#pricing) and then place the key into `./src/backend-and-api/src/main/resources/application.properties`
+file in the `api.token` field.
+
+After completing this step, you can start your app by starting the `start.bat` file if you are on Windows or `start.sh` if you are on Linux but before this run the following script in the root directory:
 ```bash
-chmod +x linux
+chmod +x start.sh
 ```
-when you're in the `bash-scripts` directory
-
-First you must install the dependencies required for the frontend and backend servers to work so run the `install-node-modules` and `install-maven-dependencies` scripts. 
-
-After installing the dependencies, you must provide an API key from the CatAPI if you want to make requests for more than 10 images. The API key must be stored in `./backend-and-api/src/main/resources/application.properties` in the `api.token` field. You can get an API key from [here](https://thecatapi.com/)
-
-When everything is ready, you can run the frontend and backend servers by running the `start-frontend-server` and `start-backend-server` scripts.
-
-After launching the app, you can access the web page on `localhost:3000` or interact with the built-in API on `localhost:8080`
+To grant access to the start script
 
 ## App docs
 [Design of the web page](https://github.com/virlancristian/Cat-Image-Generator/pull/1)
