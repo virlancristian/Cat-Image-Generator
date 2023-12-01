@@ -1,2 +1,2 @@
-backend-and-api/src/main/resources/application.properties
-frontend/node_modules
+src/backend-and-api/src/main/resources/application.properties
+src/frontend/node_modules
